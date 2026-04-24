@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Instagram, Facebook, Youtube } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const LEGAL = [
   { href: "/adatvedelem", label: "Adatvédelmi tájékoztató" },
@@ -9,12 +10,44 @@ const LEGAL = [
 ];
 
 const SOCIALS = [
-  { href: "https://instagram.com", label: "Instagram", Icon: Instagram },
-  { href: "https://www.facebook.com/profile.php?id=61572084073961", label: "Facebook", Icon: Facebook },
-  { href: "https://youtube.com", label: "YouTube", Icon: Youtube },
-  { href: "https://tiktok.com", label: "TikTok", Icon: TikTokIcon },
-  { href: "https://pinterest.com", label: "Pinterest", Icon: PinterestIcon },
-  { href: "https://snapchat.com", label: "Snapchat", Icon: SnapchatIcon },
+  {
+    href: "https://www.instagram.com/vitabits.official/",
+    label: "Instagram",
+    Icon: Instagram,
+    // Instagram's official brand gradient
+    className:
+      "bg-[linear-gradient(45deg,#F58529_0%,#FEDA77_15%,#DD2A7B_45%,#8134AF_75%,#515BD4_100%)] text-white",
+  },
+  {
+    href: "https://www.facebook.com/profile.php?id=61572084073961",
+    label: "Facebook",
+    Icon: Facebook,
+    className: "bg-[#1877F2] text-white",
+  },
+  {
+    href: "https://www.tiktok.com/@vitabits.official?lang=hu-HU",
+    label: "TikTok",
+    Icon: TikTokIcon,
+    className: "bg-black text-white",
+  },
+  {
+    href: "https://snapchat.com",
+    label: "Snapchat",
+    Icon: SnapchatIcon,
+    className: "bg-[#FFFC00] text-black ring-1 ring-black/10",
+  },
+  {
+    href: "https://pinterest.com",
+    label: "Pinterest",
+    Icon: PinterestIcon,
+    className: "bg-[#E60023] text-white",
+  },
+  {
+    href: "https://youtube.com",
+    label: "YouTube",
+    Icon: Youtube,
+    className: "bg-[#FF0000] text-white",
+  },
 ];
 
 export function SiteFooter() {
@@ -37,15 +70,18 @@ export function SiteFooter() {
               draggable={false}
             />
           </a>
-          <ul className="flex flex-wrap items-center gap-5">
-            {SOCIALS.map(({ href, label, Icon }) => (
+          <ul className="flex flex-wrap items-center gap-3">
+            {SOCIALS.map(({ href, label, Icon, className }) => (
               <li key={label}>
                 <a
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full text-brand-green-deep transition-colors hover:bg-white/40"
+                  className={cn(
+                    "inline-flex h-10 w-10 items-center justify-center rounded-full shadow-card transition-transform duration-200 ease-brand hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-brand-green-deep focus-visible:ring-offset-2",
+                    className
+                  )}
                 >
                   <Icon className="h-5 w-5" aria-hidden="true" />
                 </a>
