@@ -24,7 +24,11 @@ export function Hero() {
               className="mt-4 font-display text-h1-mobile text-brand-green-deep text-balance md:text-h1 animate-fade-up"
               style={{ animationDelay: "60ms" }}
             >
-              A napi vitamin, amit tényleg jó beépíteni a rutinodba.
+              A napi vitamin, amit tényleg{" "}
+              <span className="inline-block -rotate-6 text-[#20df4d]">
+                jó
+              </span>{" "}
+              beépíteni a rutinodba.
             </h1>
             <p
               className="mx-auto mt-5 max-w-xl text-body-md text-brand-ink-muted md:text-body-lg lg:mx-0 animate-fade-up"
@@ -56,26 +60,20 @@ export function Hero() {
 
 function ProductPlinth() {
   return (
-    <div className="relative aspect-[4/5] w-full">
-      {/* Plinth glow */}
+    <div className="relative aspect-[4/3] w-full">
+      {/* Soft green glow behind the frame */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 top-[8%] scale-[0.92] rounded-[48%] bg-gradient-a opacity-40 blur-3xl"
+        className="absolute -inset-4 rounded-[32px] bg-gradient-a opacity-25 blur-3xl"
       />
-      {/* Soft green disc */}
-      <div
-        aria-hidden="true"
-        className="absolute bottom-[14%] left-1/2 h-[18%] w-[62%] -translate-x-1/2 rounded-[50%] bg-brand-surface/70 blur-2xl"
-      />
-      <div className="relative h-full w-full animate-float-y motion-reduce:animate-none">
+      <div className="relative h-full w-full overflow-hidden rounded-card shadow-cta ring-1 ring-brand-green/10 motion-safe:animate-float-y">
         <Image
-          src="/images/hero-pouch.jpg"
-          alt="Vitabits grüni gumivitamin tasak — alma-lime ízű, vitaminokkal, ásványi anyagokkal és növényi kivonatokkal"
+          src="/images/hero-shot.png"
+          alt="Vitabits grüni gumivitamin — elégedett vásárló a tasakkal a konyhában"
           fill
           priority
-          sizes="(min-width: 1024px) 480px, (min-width: 640px) 80vw, 100vw"
-          className="object-contain"
-          style={{ mixBlendMode: "multiply" }}
+          sizes="(min-width: 1024px) 520px, (min-width: 640px) 80vw, 100vw"
+          className="object-cover"
         />
       </div>
     </div>

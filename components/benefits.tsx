@@ -11,7 +11,7 @@ const CARDS = [
     Icon: CalendarCheck,
     title: "Könnyebb tartani",
     body:
-      "Kevesebb súrlódás, több következetesség. Egy rutin akkor működik, ha könnyű tartani — otthon, útközben, reggel vagy délután.",
+      "kevesebb nehézség, több következetesség. Egy rutin akkor működik, ha könnyű tartani — otthon, útközben, reggel vagy délután.",
   },
   {
     Icon: Sparkles,
@@ -51,7 +51,7 @@ export function Benefits() {
           {CARDS.map(({ Icon, title, body }) => (
             <li
               key={title}
-              className="group rounded-card border-[1.5px] border-brand-green/25 bg-white p-6 shadow-card transition-all duration-200 ease-brand hover:-translate-y-0.5 hover:border-brand-green/50 hover:shadow-[0_12px_32px_rgba(15,26,16,0.08)] md:p-7"
+              className="group flex flex-col items-center rounded-card border-[1.5px] border-brand-green/25 bg-white p-6 text-center shadow-card transition-all duration-200 ease-brand hover:-translate-y-0.5 hover:border-brand-green/50 hover:shadow-[0_12px_32px_rgba(15,26,16,0.08)] md:p-7"
             >
               <span className="inline-flex h-12 w-12 items-center justify-center rounded-btn bg-brand-surface text-brand-green-deep">
                 <Icon className="h-6 w-6" aria-hidden="true" strokeWidth={1.75} />

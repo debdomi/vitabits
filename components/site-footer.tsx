@@ -21,10 +21,22 @@ export function SiteFooter() {
   return (
     <footer className="bg-brand-surface text-brand-green-deep">
       <div className="container-wide py-12 md:py-16">
-        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          <span className="select-none font-display text-[34px] font-bold leading-none tracking-[-0.02em] text-brand-orange">
-            Vitabits
-          </span>
+        <div className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
+          <a
+            href="#"
+            aria-label="Vissza a tetejére"
+            className="inline-block shrink-0 rounded-btn focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-brand-green-deep focus-visible:ring-offset-2"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo.png"
+              alt="Vitabits"
+              width={2400}
+              height={1340}
+              className="h-16 w-auto select-none md:h-24"
+              draggable={false}
+            />
+          </a>
           <ul className="flex flex-wrap items-center gap-5">
             {SOCIALS.map(({ href, label, Icon }) => (
               <li key={label}>

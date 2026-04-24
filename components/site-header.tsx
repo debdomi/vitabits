@@ -40,7 +40,7 @@ export function SiteHeader() {
           : "bg-brand-surface/80 backdrop-blur-md supports-[not_(backdrop-filter:blur(0))]:bg-brand-surface"
       )}
     >
-      <div className="container-wide flex h-14 items-center justify-between md:h-16">
+      <div className="container-wide flex h-20 items-center justify-between md:h-24">
         <Link
           href="/"
           className="flex items-center gap-2"
@@ -90,7 +90,7 @@ export function SiteHeader() {
       <div
         id="mobile-drawer"
         className={cn(
-          "fixed inset-x-0 top-14 z-40 overflow-hidden bg-brand-surface shadow-card transition-[max-height] duration-300 ease-brand md:hidden",
+          "fixed inset-x-0 top-20 z-40 overflow-hidden bg-brand-surface shadow-card transition-[max-height] duration-300 ease-brand md:hidden",
           open ? "max-h-[80vh]" : "max-h-0"
         )}
       >
@@ -121,11 +121,12 @@ export function SiteHeader() {
 
 function Wordmark() {
   return (
-    <span
-      className="select-none font-display text-[26px] font-bold leading-none tracking-[-0.02em] text-brand-orange md:text-[30px]"
-      aria-hidden="false"
-    >
-      Vitabits
-    </span>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/images/logo.png"
+      alt="Vitabits"
+      className="h-16 w-auto shrink-0 select-none md:h-20"
+      draggable={false}
+    />
   );
 }

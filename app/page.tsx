@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <SiteHeader />
-      <main id="main" className="pt-14 md:pt-16">
+      <main id="main" className="pt-20 md:pt-24">
         <Hero />
         <NatureStrip />
         <Benefits />

@@ -66,7 +66,7 @@ export function Comparison() {
           {/* Vitabits column — green gradient, elevated */}
           <article
             aria-labelledby="col-vitabits"
-            className="relative overflow-hidden rounded-card bg-gradient-a p-6 text-white shadow-cta md:p-8"
+            className="relative overflow-hidden rounded-card bg-[#0d591f] p-6 text-white shadow-cta md:p-8"
           >
             <div
               aria-hidden="true"

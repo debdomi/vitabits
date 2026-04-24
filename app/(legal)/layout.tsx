@@ -9,7 +9,7 @@ export default function LegalLayout({
   return (
     <>
       <SiteHeader />
-      <main id="main" className="pt-14 md:pt-16">
+      <main id="main" className="pt-20 md:pt-24">
         <article className="container-narrow prose prose-neutral py-16 md:py-24 max-w-3xl">
           {children}
         </article>

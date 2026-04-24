@@ -254,11 +254,7 @@ export function ScrollAnimation() {
       </h2>
 
       {/* Pinned viewport */}
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden bg-gradient-b">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 bg-gradient-a-radial"
-        />
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden bg-white">
         <div className="container-wide relative grid w-full items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]">
           {/* Text reveals */}
           <ol
@@ -341,12 +337,8 @@ function StaticFallback({
     <section
       id="animacio"
       aria-labelledby="animation-title"
-      className="section-y relative overflow-hidden bg-gradient-b"
+      className="section-y relative overflow-hidden bg-white"
     >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-gradient-a-radial"
-      />
       <div className="container-wide relative grid items-center gap-10 lg:grid-cols-2">
         <div className="order-2 text-center lg:order-1 lg:text-left">
           <h2
