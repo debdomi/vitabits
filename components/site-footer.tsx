@@ -31,6 +31,12 @@ const SOCIALS = [
     className: "bg-black text-white",
   },
   {
+    href: "https://x.com/Vitabits",
+    label: "X",
+    Icon: XIcon,
+    className: "bg-black text-white",
+  },
+  {
     href: "https://snapchat.com",
     label: "Snapchat",
     Icon: SnapchatIcon,
@@ -113,6 +119,14 @@ function TikTokIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
       <path d="M19.6 6.3c-1.3-.2-2.4-1-3-2.1-.3-.5-.4-1-.5-1.6h-3v12.4a2.7 2.7 0 1 1-2.7-2.7c.3 0 .6 0 .9.1V9.3c-.3 0-.6-.1-.9-.1a5.8 5.8 0 1 0 5.8 5.8V9.7a7 7 0 0 0 4 1.3V8a4.6 4.6 0 0 1-.6-1.7Z" />
+    </svg>
+  );
+}
+
+function XIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
     </svg>
   );
 }
