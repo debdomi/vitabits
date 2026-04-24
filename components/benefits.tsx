@@ -11,7 +11,7 @@ const CARDS = [
     Icon: CalendarCheck,
     title: "Könnyebb tartani",
     body:
-      "kevesebb nehézség, több következetesség. Egy rutin akkor működik, ha könnyű tartani — otthon, útközben, reggel vagy délután.",
+      "Kevesebb nehézség, több következetesség. Egy rutin akkor működik, ha könnyű tartani — otthon, útközben, reggel vagy délután.",
   },
   {
     Icon: Sparkles,
