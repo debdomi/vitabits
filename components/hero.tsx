@@ -15,43 +15,42 @@ export function Hero() {
       />
 
       <div className="container-wide relative pt-10 pb-14 md:pt-20 md:pb-24 lg:pt-24">
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,480px)] lg:gap-16">
-          {/* Copy + form */}
-          <div className="text-center lg:text-left">
-            <p className="kicker animate-fade-up">Új generációs gumivitamin</p>
-            <h1
-              id="hero-title"
-              className="mt-4 font-display text-h1-mobile text-brand-green-deep text-balance md:text-h1 animate-fade-up"
-              style={{ animationDelay: "60ms" }}
-            >
-              A napi vitamin, amit tényleg{" "}
-              <span className="inline-block -rotate-6 text-[#20df4d]">
-                jó
-              </span>{" "}
-              beépíteni a rutinodba.
-            </h1>
-            <p
-              className="mx-auto mt-5 max-w-xl text-body-md text-brand-ink-muted md:text-body-lg lg:mx-0 animate-fade-up"
-              style={{ animationDelay: "120ms" }}
-            >
-              50+ összetevő — vitaminok, ásványi anyagok és növényi kivonatok —
-              egyetlen ízletes gumivitaminban. Egyszerűbb, finomabb,
-              követhetőbb.
-            </p>
+        <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+          <p className="animate-fade-up inline-flex items-center rounded-pill border border-brand-green/15 bg-white px-5 py-2.5 text-[15px] font-bold uppercase tracking-[0.06em] text-brand-green shadow-card">
+            Új generációs gumivitamin
+          </p>
+          <h1
+            id="hero-title"
+            className="mt-4 font-display text-h1-mobile text-brand-green-deep text-balance md:text-h1 animate-fade-up"
+            style={{ animationDelay: "60ms" }}
+          >
+            A napi vitamin, amit tényleg{" "}
+            <span className="inline-block -rotate-6 text-[#20df4d]">jó</span>{" "}
+            beépíteni a rutinodba.
+          </h1>
+          <p
+            className="mt-5 max-w-2xl text-body-md text-brand-ink-muted md:text-body-lg animate-fade-up"
+            style={{ animationDelay: "120ms" }}
+          >
+            50+ összetevő — vitaminok, ásványi anyagok és növényi kivonatok —
+            egyetlen ízletes gumivitaminban. Egyszerűbb, finomabb,
+            követhetőbb.
+          </p>
 
-            <div
-              className="mx-auto mt-8 max-w-xl lg:mx-0 animate-fade-up"
-              style={{ animationDelay: "180ms" }}
-            >
-              <WaitlistForm source="hero" />
-            </div>
+          <div
+            className="mt-8 w-full max-w-xl animate-fade-up"
+            style={{ animationDelay: "180ms" }}
+          >
+            <WaitlistForm source="hero" />
           </div>
+        </div>
 
-          {/* Product visual */}
-          <div className="relative mx-auto w-full max-w-[520px] animate-fade-up lg:max-w-none"
-               style={{ animationDelay: "240ms" }}>
-            <ProductPlinth />
-          </div>
+        {/* Product visual, below the form */}
+        <div
+          className="mx-auto mt-12 w-full max-w-4xl animate-fade-up md:mt-16"
+          style={{ animationDelay: "240ms" }}
+        >
+          <ProductPlinth />
         </div>
       </div>
     </section>
@@ -60,7 +59,7 @@ export function Hero() {
 
 function ProductPlinth() {
   return (
-    <div className="relative aspect-[4/3] w-full">
+    <div className="relative aspect-[16/9] w-full">
       {/* Soft green glow behind the frame */}
       <div
         aria-hidden="true"
@@ -72,7 +71,7 @@ function ProductPlinth() {
           alt="Vitabits grüni gumivitamin — elégedett vásárló a tasakkal a konyhában"
           fill
           priority
-          sizes="(min-width: 1024px) 520px, (min-width: 640px) 80vw, 100vw"
+          sizes="(min-width: 1024px) 960px, (min-width: 640px) 90vw, 100vw"
           className="object-cover"
         />
       </div>
