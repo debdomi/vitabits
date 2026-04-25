@@ -17,8 +17,8 @@ export default function Home() {
       <main id="main" className="pt-20 md:pt-24">
         <Hero />
         <NatureStrip />
-        <Benefits />
         <ScrollAnimation />
+        <Benefits />
         <Comparison />
         <BrandStory />
         <Faq />
